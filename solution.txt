@@ -862,3 +862,54 @@ int main()
 
     return 0;
 }
+----------------------------------------------------------------------------------------
+// Algorithm Viva
+----------------------------------------------------------------------------------------
+1. Linear Search
+Time Complexity: Best: O(1), Average: O(n), Worst: O(n)
+Space Complexity: O(1)
+Pros: Simple to implement and works on both sorted and unsorted arrays.
+Cons: Slow for large datasets because it may need to check every element.
+Ideal Use Case: Best for small datasets or when the data is unsorted.
+2. Binary Search
+Time Complexity: Best: O(1), Average: O(log n), Worst: O(log n)
+Space Complexity: O(1) (iterative version)
+Pros: Very fast and efficient for searching.
+Cons: Requires the array to be sorted beforehand.
+Ideal Use Case: Searching elements in a sorted array.
+3. Insertion Sort
+Time Complexity: Best: O(n), Average: O(n²), Worst: O(n²)
+Space Complexity: O(1)
+Pros: Simple, stable, in-place, and performs well on nearly sorted arrays.
+Cons: Inefficient for large datasets due to quadratic time complexity.
+Ideal Use Case: Small datasets or arrays that are already nearly sorted.
+4. Merge Sort
+Time Complexity: Best: O(n log n), Average: O(n log n), Worst: O(n log n)
+Space Complexity: O(n)
+Pros: Stable sorting algorithm with guaranteed O(n log n) performance.
+Cons: Requires extra memory for temporary arrays.
+Ideal Use Case: Large datasets where stable sorting is required.
+5. Quick Sort
+Time Complexity: Best: O(n log n), Average: O(n log n), Worst: O(n²)
+Space Complexity: O(log n) (average recursion stack)
+Pros: Very fast in practice, in-place, and widely used.
+Cons: Worst-case performance is O(n²) and it is not stable.
+Ideal Use Case: General-purpose sorting of large arrays.
+6. Counting Sort
+Time Complexity: Best: O(n + k), Average: O(n + k), Worst: O(n + k) (where k is the range of input values)
+Space Complexity: O(k)
+Pros: Extremely fast for integers within a small range and does not use comparisons.
+Cons: Only works efficiently for integer data with a limited value range and requires extra memory.
+Ideal Use Case: Sorting marks, ages, grades, or other integer values with a small range.
+7. Depth First Search (DFS)
+Time Complexity: Best: O(V + E), Average: O(V + E), Worst: O(V + E) (V = vertices, E = edges)
+Space Complexity: O(V)
+Pros: Simple implementation using recursion or a stack; useful for exploring graphs deeply.
+Cons: Does not guarantee the shortest path in a graph.
+Ideal Use Case: Cycle detection, topological sorting, connected components, and graph traversal.
+8. Breadth First Search (BFS)
+Time Complexity: Best: O(V + E), Average: O(V + E), Worst: O(V + E)
+Space Complexity: O(V)
+Pros: Finds the shortest path in an unweighted graph and explores nodes level by level.
+Cons: Uses more memory than DFS because of the queue.
+Ideal Use Case: Shortest path in unweighted graphs, level-order traversal, and network traversal.
